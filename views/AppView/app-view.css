@@ -1,0 +1,304 @@
+/* * General settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Titillium Web", "Roboto", "Open Sans";
+  font-weight: 400;
+  font-size: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(97, 96, 96);
+}
+
+/* * Searcing Bar*/
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid rgb(70, 70, 70);
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: rgb(70, 70, 70);
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid rgb(70, 70, 70);
+  background: rgb(70, 70, 70);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+.wrap {
+  margin: 25px auto 0;
+  width: 50%;
+  min-width: 320px;
+}
+
+/* * Slider */
+.slider {
+  margin: 25px auto 0;
+  width: 1400px;
+  height: 500px;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 500px;
+  background: #fff;
+}
+
+.items {
+  position: relative;
+  display: flex;
+  width: 200000px;
+  flex-wrap: nowrap;
+  height: 500px;
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+}
+
+.items:active {
+  cursor: grabbing;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+}
+
+#items.shifting {
+  transition: left 0.5s ease-out;
+}
+
+.slide {
+  position: relative;
+  padding: 15px 0;
+  width: 350px;
+  height: 490px;
+  box-sizing: content-box;
+  overflow: hidden;
+  transition: all 1s cubic-bezier(0.67, 0.41, 0.49, 0.94);
+}
+
+.clip {
+  margin: 0 auto;
+  padding: 5px;
+  width: 320px;
+  height: 450px;
+  box-sizing: content-box;
+  transition: 0.4s;
+  overflow: hidden;
+}
+
+.clip:hover {
+  transform: translateY(-10px);
+  -webkit-box-shadow: 1px 1px 5px 1px #8c7d84;
+  box-shadow: 1px 1px 5px 1px #8c7d84;
+}
+
+.clip-title-link {
+  display: block;
+  font-size: 17px;
+  color: rgb(85, 84, 84);
+  width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.clip-title-link:hover {
+  font-size: 17px;
+  color: rgb(27, 27, 27);
+}
+
+.clip-author,
+.clip-upload,
+.clip-view-count {
+  padding-top: 8px;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description-module {
+  width: 320px;
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+
+.clip-description {
+  margin: 0;
+  padding-top: 8px;
+  font-size: 12px;
+}
+
+.control-wrap {
+  padding: 15px 0;
+  display: none;
+  justify-content: center;
+}
+
+.control {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  color: #fff;
+  text-align: center;
+  padding: 2px 0;
+  font-size: 12px;
+  user-select: none;
+}
+
+.prev {
+  opacity: 0;
+}
+
+.prev,
+.next {
+  background-color: rgb(165, 165, 165);
+  cursor: pointer;
+}
+
+.current {
+  background-color: rgb(70, 70, 70);
+}
+
+.current:hover {
+  cursor: default;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgb(70, 70, 70);
+}
+
+.control + .control {
+  margin-left: 20px;
+}
+
+.tipPrev,
+.tipNext {
+  z-index: 1;
+  position: absolute;
+  top: 570px;
+  padding: 5px 0;
+  width: 24px;
+  border-radius: 6px;
+  background-color: rgb(70, 70, 70);
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  transition: opacity 0.3s;
+  user-select: none;
+}
+
+.tipPrev {
+  margin-left: -40px;
+  opacity: 0;
+}
+
+.tipNext {
+  margin-left: 40px;
+  opacity: 0;
+}
+
+img[src=""] {
+  visibility: hidden;
+}
+
+/* * Media queries for Slider */
+@media screen and (max-width: 1420px) {
+  .slider {
+    width: 1080px;
+  }
+
+  .slide {
+    width: 360px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .slider {
+    width: 730px;
+  }
+
+  .slide {
+    width: 365px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .wrap {
+    margin: 20px auto 0;
+  }
+
+  .slider {
+    margin: 0px auto 0;
+    width: 320px;
+    height: 390px;
+  }
+
+  .wrapper {
+    height: 390px;
+  }
+
+  .items {
+    height: 390px;
+  }
+
+  .slide {
+    width: 320px;
+    height: 380px;
+  }
+
+  .clip {
+    height: 380px;
+  }
+
+  .description-module {
+    -webkit-line-clamp: 3;
+  }
+
+  .clip:hover {
+    transform: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .tipPrev,
+  .tipNext {
+    display: none;
+  }
+}
