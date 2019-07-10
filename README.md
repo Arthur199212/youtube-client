@@ -1,6 +1,6 @@
 # YouTube Client
 
-Used technologies: CSS, JS
+Used technologies: CSS, JS, YouTube API
 
 Features: responsive design, all HTML renders using only JS
 
