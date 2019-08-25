@@ -1,7 +1,11 @@
 # YouTube Client
 
-Used technologies: CSS, JS, YouTube API
+1. [Link to app](https://arthur199212.github.io/youtube-client/)
+2. Used technologies: CSS, JS, YouTube API
+3. Features: responsive design, all HTML renders using only JS
 
-Features: responsive design, all HTML renders using only JS
+### Description
 
-[Link to site](https://arthur199212.github.io/youtube-client/)
+In this app, you can type any request and get videos from YouTube
+
+![screenshot](https://lh3.googleusercontent.com/xpjt_ZwwDJka9gmIm8PiaAmLMHG1MTOIf51guJ0yWxUeXyDp0ufnZERKvoQA-tM4jbTC7_qwbx13-npox7GGJFbuRvZiJ3xzPDXdv0MmWwDOrg6vHBHv6etErF1X3JVVVLCYU-e2CwckIgIjMdwJUOtTTvn2tpiwctskzjfcllA4uXOHx7rNU8h9M1QPUkGRrAP7fPDJ_d7wo7Ww7eWZoPvTcbUcl_U1oDHaLzKXES-h03qFB79KdsA5Y0XkZLxCeUjVS9QQfwnpmxyDXPF32yXFaGVLeAYC-I6-n2zS8T8b-tcwFxeehOphLxQEKApsEjKoytVzwESDVQebG61OaSZU4VdTDjPFucjgtOZoNArrNepE9cqzG6JfPSQFQb3Hyg8gWmLLZCdM7xmXlEpa9A6ePEos1O0qR6pU73X8Hn6IprzqmzfXp9K06aRVjFp8QBaWPK1_to18vog2vGGLXD4qpSeHAllA9KVLB6OsMcwYiTvgvdHNJYQPnaNTC0WXEUy_FJFKwGEsVcAJ94ZLm5ou0CZaosATxYZ4ci-PIgaUrtnMZvAjBOPi7Nw7r3d5bjMgk-s5UTC9dUoZt2M58I4TWPC4MThg5sYyo9JW71Vbzs6vhsVEBCc3qd6WbaUeSrs1m36GifItUupbOdYR7jNIg1Zb-0U=w1363-h632-no)
